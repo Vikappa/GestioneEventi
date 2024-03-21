@@ -6,6 +6,8 @@ import java.util.Date;
 
 @Entity
 @Table(name = "evento")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "tipo_evento", discriminatorType = DiscriminatorType.STRING)
 public class Evento {
 
     @Id
@@ -26,9 +28,24 @@ public class Evento {
     @Column(nullable = false)
     private TipoEvento tipoEvento;
 
-    @Column(nullable = false)
     private Integer numeroMassimoPartecipanti;
 
+    @ManyToOne
+    @JoinColumn(name = "id", nullable = false)
+    private Location location;
+
+    @ManyToOne
+    @JoinColumn(name = "id", nullable = false)
+    private Partecipazione partecipazione;
+
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
 
     public enum TipoEvento {
         PUBBLICO, PRIVATO

@@ -1,6 +1,9 @@
 package vincenzoProject.entities;
 import jakarta.persistence.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Table(name = "Locations")
 public class Location {
@@ -12,6 +15,17 @@ public class Location {
     private String nome;
     @Column(name = "Città")
     private String città;
+
+    @OneToMany(mappedBy = "location")
+    private Set<Evento> eventi = new HashSet<>();
+
+    public Set<Evento> getEventi() {
+        return eventi;
+    }
+
+    public void setEventi(Set<Evento> eventi) {
+        this.eventi = eventi;
+    }
 
     public Location() {}
 

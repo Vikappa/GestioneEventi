@@ -10,6 +10,10 @@ public class Persona {
     @GeneratedValue
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "partecipants", nullable = false)
+    private Persona partecipante;
+
     @Column(name = "Nome")
     private String nome;
     @Column(name = "Città")
