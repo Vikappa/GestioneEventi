@@ -18,14 +18,6 @@ public class Evento {
     @Column(nullable = false)
     private Date dataEvento;
 
-    public Evento() {};
-    public Evento(String titolo, Date dataEvento, String descrizione, TipoEvento tipoEvento, Integer numeroMassimoPartecipanti) {
-        this.titolo = titolo;
-        this.dataEvento = dataEvento;
-        this.descrizione = descrizione;
-        this.tipoEvento = tipoEvento;
-        this.numeroMassimoPartecipanti = numeroMassimoPartecipanti;
-    }
 
     @Column(length = 500)
     private String descrizione;
@@ -45,7 +37,6 @@ public class Evento {
     public Long getId() {
         return id;
     }
-
 
     public void setId(Long id) {
         this.id = id;
@@ -91,6 +82,14 @@ public class Evento {
         this.numeroMassimoPartecipanti = numeroMassimoPartecipanti;
     }
 
+    public Evento() {};
+    public Evento(String titolo, Date dataEvento, String descrizione, TipoEvento tipoEvento, Integer numeroMassimoPartecipanti) {
+        this.titolo = titolo;
+        this.dataEvento = dataEvento;
+        this.descrizione = descrizione;
+        this.tipoEvento = tipoEvento;
+        this.numeroMassimoPartecipanti = numeroMassimoPartecipanti;
+    }
     @Override
     public String toString() {
         return "Evento{" +

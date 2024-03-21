@@ -5,10 +5,9 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import vincenzoProject.entities.Evento;
-import vincenzoProject.entities.EventoDAO;
+import vincenzoProject.entities.dao.EventoDAO;
 import vincenzoProject.exceptions.NotFoundException;
 
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class Application {

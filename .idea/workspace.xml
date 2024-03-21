@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12141f6f-409a-4c03-89c1-610a0f50ffd4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/Evento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/EventoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/exceptions/NotFoundException.java" afterDir="false" />
+    <list default="true" id="12141f6f-409a-4c03-89c1-610a0f50ffd4" name="Changes" comment="Update esercizi su eventDAO">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Diagramma ERM D3W3U4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/Partecipazione.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/dao/LocationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/dao/PartecipazioneDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/dao/PersonaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/cody_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cody_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vincenzoProject/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/EventoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vincenzoProject/entities/dao/EventoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,28 +38,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PerforceDirect.Settings">
+    <option name="ENABLED" value="false" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2duOD6G1dv08WTKaL1Mw0vM2RBv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.CodyConvertUrlToCodebaseName&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyHistoryLlmMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Application.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,6 +83,15 @@
       <option name="presentableId" value="Default" />
       <updated>1710854374136</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update esercizi su eventDAO">
+      <option name="closed" value="true" />
+      <created>1710970858860</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710970858860</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,5 +104,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update esercizi su eventDAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update esercizi su eventDAO" />
   </component>
 </project>

@@ -1,7 +1,8 @@
-package vincenzoProject.entities;
+package vincenzoProject.entities.dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
+import vincenzoProject.entities.Evento;
 
 public class EventoDAO{
     private final EntityManager em;
